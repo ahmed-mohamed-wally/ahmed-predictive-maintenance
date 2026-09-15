@@ -1,0 +1,9 @@
+{
+  "threshold":0.35,
+  "failure_precision":0.5096153846,
+  "failure_recall":0.7794117647,
+  "failure_f1":0.6162790698,
+  "accuracy":0.967,
+  "roc_auc":0.9593571124,
+  "pr_auc":0.7136752624
+}

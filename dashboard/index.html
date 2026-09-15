@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Predictive Maintenance Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>Predictive Maintenance</h1>
+            <p>AI-powered machine failure and failure-type prediction</p>
+        </header>
+
+        <main class="dashboard">
+
+            <section class="card input-card">
+
+                <h2>Machine Sensor Data</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="machineType">Machine Type</label>
+
+                        <select id="machineType">
+                            <option value="L">L</option>
+                            <option value="M">M</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="airTemp">Air Temperature [K]</label>
+                        <input id="airTemp" type="number" step="0.1" value="302">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="processTemp">Process Temperature [K]</label>
+                        <input id="processTemp" type="number" step="0.1" value="311">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rpm">Rotational Speed [rpm]</label>
+                        <input id="rpm" type="number" step="1" value="1400">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="torque">Torque [Nm]</label>
+                        <input id="torque" type="number" step="0.1" value="55">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="toolWear">Tool Wear [min]</label>
+                        <input id="toolWear" type="number" step="1" value="180">
+                    </div>
+
+                </div>
+
+                <button id="predictBtn">
+                    Predict Machine Risk
+                </button>
+
+                <p id="errorMessage" class="error"></p>
+
+            </section>
+
+
+            <section class="card result-card">
+
+                <h2>Prediction Result</h2>
+
+                <div class="result-box">
+
+                    <div class="metric">
+                        <span>Failure Probability</span>
+                        <strong id="failureProbability">--</strong>
+                    </div>
+
+                    <div class="metric">
+                        <span>Machine Status</span>
+                        <strong id="machineStatus">--</strong>
+                    </div>
+
+                    <div class="metric">
+                        <span>Risk Level</span>
+                        <strong id="riskLevel">--</strong>
+                    </div>
+
+                    <div class="metric">
+                        <span>Failure Type(s)</span>
+                        <strong id="failureTypes">--</strong>
+                    </div>
+
+                    <div class="metric">
+                        <span>Maintenance Action</span>
+                        <strong id="maintenanceAction">--</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Predictive Maintenance AI System</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
