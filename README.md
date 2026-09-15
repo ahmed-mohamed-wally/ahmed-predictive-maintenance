@@ -18,7 +18,7 @@ Artificial Intelligence Student | Intelligent Systems
 
 ## 📸 Dashboard
 
-> Add your dashboard screenshot as `assets/dashboard.png`.
+
 
 ![Predictive Maintenance Dashboard](assets/dashboard.png)
 
